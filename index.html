@@ -16,21 +16,21 @@
   <div class="form-row">
   <input type="text" id="taskInput" placeholder="Enter a new task">
 
-  <select id="priorityInput">
+  <select id="priority">
     <option value="Low">Low</option>
     <option value="Medium">Medium</option>
     <option value="High">High</option>
   </select>
 
   <label for="dueDateInput" class="due-label">Due date:</label>
-  <input type="date" id="dueDateInput">
+  <input type="date" id="dueDate">
 
   <button onclick="addTask()">Add</button>
 </div>
 
 
   <div class="filter-container">
-  <select id="filterPriority" onchange="renderTasks()">
+  <select id="filterPriority" onchange="filterTasks()">
     <option value="All">Show All</option>
     <option value="High">High Priority</option>
     <option value="Medium">Medium Priority</option>
@@ -39,6 +39,12 @@
 </div>
 
 
+<div class="progress-container">
+  <div class="progress-label">Progress</div>
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+</div>
 
   <ul id="taskList"></ul>
 

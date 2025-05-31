@@ -26,7 +26,7 @@ function addTask() {
   const task = {
   text: taskInput.value.trim(),
   done: false,
-  progress: "started", // ✅ add this!
+  progress: "started", // initial progress state
   priority,
   dueDate,
   timestamp: new Date().toLocaleString(),

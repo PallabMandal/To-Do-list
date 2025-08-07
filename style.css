@@ -341,7 +341,7 @@ button {
 }
 
 /* Responsive layout for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .form-row {
     flex-direction: column;
     align-items: stretch;
